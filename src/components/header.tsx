@@ -21,7 +21,7 @@ export async function Header() {
         Tutorials
       </Link>
       <IconSeparator />
-      <Link href="/api" rel="nofollow" className="mr-2">
+      <Link href="" rel="nofollow" className="mr-2">
         App
       </Link>
     </header>

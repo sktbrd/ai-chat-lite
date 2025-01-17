@@ -8,7 +8,6 @@ import { readStreamableValue } from 'ai/rsc';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { IconArrowUp } from '@/components/ui/icons';
-import Link from "next/link";
 import AboutCard from "@/components/cards/aboutcard";
 
 export const maxDuration = 30;
