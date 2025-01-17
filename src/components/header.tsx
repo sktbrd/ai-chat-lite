@@ -1,32 +1,28 @@
 import * as React from 'react'
 import Link from 'next/link'
-import { cn } from '@/lib/utils'
-import { buttonVariants } from '@/components/ui/button'
-import { IconSeparator, IconVercel } from '@/components/ui/icons'
+import { IconSeparator } from '@/components/ui/icons'
 import EnvCard from './cards/envcard'
 
 export async function Header() {
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between w-full h-16 px-4 border-b shrink-0 bg-white ">  
+    <header className="sticky top-0 z-50 flex items-center  w-full h-16 px-4 border-b shrink-0 bg-white ">
       <EnvCard />
+      <div className="flex-start" />
+      <img
+        src="https://www.skatehive.app/SKATE_HIVE_VECTOR_FIN.svg"
+        alt="Skatehive Logo"
+        className="w-8 h-8 mr-2"
+      />
       <Link href="/" rel="nofollow" className="mr-2 font-bold">
-        Next.js AI Lite
+        Skatehive Docs
       </Link>
       <IconSeparator />
-      <Link
-        href="/genui"
-        className={cn(buttonVariants({ variant: 'link' }), "mr-auto font-normal")}
-      >
-        <span className="hidden md:flex">GenUI</span>
+      <Link href="/tutorials" rel="nofollow" className="mr-2">
+        Tutorials
       </Link>
-      <Link
-        href="https://vercel.com/new"
-        target="_blank"
-        className={cn(buttonVariants())}
-      >
-        <IconVercel className="mr-2" />
-        <span className="hidden sm:block">Deploy to Vercel</span>
-        <span className="sm:hidden">Deploy</span>
+      <IconSeparator />
+      <Link href="/api" rel="nofollow" className="mr-2">
+        App
       </Link>
     </header>
   )
